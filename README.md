@@ -1,5 +1,4 @@
 # Git and GitHub Study Repository
-
 This repository contains study notes and practical exercises for understanding Git architecture and daily workflow.
 
 ## Core Concepts
@@ -27,29 +26,22 @@ Git generates a unique SHA-1 hash for everything and stores them in the .git/obj
 * Tagged Annotation: Used to mark specific commits.
 
 ## Standard Command Workflow
-
-* git init
+* `git init`<br>
   Initializes a new repository by creating the .git directory structure.
-
-* git status
+* `git status`<br>
   Shows the current state of the working directory and staging area.
-
-* git status -s
-  Provides a condensed, short status summary.
-  Example output:
-  M  file.txt
-
-* git ls-files
-  Lists all files currently tracked in the repository.
-  Example output:
-  README.md
+* `git status -s`<br>
+  Provides a condensed, short status summary.<br>
+  Example output:<br>
+  M file.txt
+* `git ls-files`<br>
+  Lists all files currently tracked in the repository.<br>
+  Example output:<br>
+  README.md<br>
   file.txt
-
-* git add .
+* `git add .`<br>
   Moves all modified and untracked files into the Staging Area.
-
-* git commit -m "message"
+* `git commit -m "message"`<br>
   Saves the staging area as a permanent commit in the repository.
-
-* git log
+* `git log`<br>
   Displays the commit history, including the SHA-1 hash, author details, date, and message.
