@@ -20,7 +20,7 @@ Git generates a unique SHA-1 hash for everything and stores them in the .git/obj
 * Tree: Stores directory structure and groups of blobs.
 * Commit: Stores snapshot metadata (author, date, message) and points to a tree.
 * Tagged Annotation: Used to mark specific commits.
-## Standard Command Workflow
+## Standard Command Workflow (full bash history save in obsidian this summary)
 * `git init`<br>
   Initializes a new repository by creating the .git directory structure.
 * `git status`<br>
@@ -194,5 +194,3 @@ Exploring `.git/` directly shows the internal structure Git relies on:
 ## Working with Multiple Local Repos (Simulating Remote/Local)
 * Created a second local repository (`remote-repo/`) to act as a stand-in "remote", then cloned it into `local-repo/` to simulate a real developer/remote relationship — useful for practicing `push`/`pull`/`fetch`/`merge` without needing GitHub.
 * Demonstrated that changes made directly in the "remote" repo (`remote-repo/`) are only reflected in `local-repo/` after `git fetch` + `git merge`, or `git pull` (fetch + merge combined).
-* `git logref` → `git: 'logref' is not a git command.` (typo for `git reflog`; no suggestion offered).
-* `git restore -- staged file.txt` → fails because `staged` after `--` is treated as a literal pathspec, not the `--staged` flag; correct form is `git restore --staged file.txt`.
